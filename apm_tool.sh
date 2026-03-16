@@ -38,7 +38,10 @@ function get_system_info ()
 
 function get_free_disk_space ()
 {
-    sleep 1
+    local df_data="placeholder"
+    # command: something like df -h / | awk '{print $4}'
+    # The above command will run df, printing the available blocks in human readable form.
+    # Problems: feels too short to be right, may have the available column wrong (easy fix if so), probably displays in G instead of MB
 }
 
 function cleanup () {
