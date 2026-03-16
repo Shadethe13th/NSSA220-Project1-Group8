@@ -36,6 +36,11 @@ function get_system_info ()
     sleep 1
 }
 
+function get_free_disk_space ()
+{
+    sleep 1
+}
+
 function cleanup () {
     echo "Ctrl+C detected..."
     kill -9 $pid_apm1
@@ -61,3 +66,4 @@ while true; do
     sleep 1
 done
 
+# add df
